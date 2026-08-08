@@ -945,35 +945,34 @@ let letter = "";
 /* ================= BACK TO TOP ================= */
 
 #topBtn {
-    position: fixed !important;
-    right: 30px !important;
-    left: auto !important;
-    bottom: 30px !important;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
 
-    width: 55px !important;
-    height: 55px !important;
+    width: 55px;
+    height: 55px;
 
-    border: none !important;
-    border-radius: 50% !important;
+    border: none;
+    border-radius: 50%;
 
-    background: #00BFFF !important;
-    color: #ffffff !important;
-
-    font-size: 22px !important;
-    cursor: pointer !important;
+    background: #00BFFF;
+    color: white;
 
     display: none;
     align-items: center;
     justify-content: center;
 
-    z-index: 99999 !important;
+    font-size: 22px;
+    cursor: pointer;
+
+    z-index: 99999;
 
     box-shadow: 0 5px 15px rgba(0, 191, 255, 0.4);
 
-    transition: all 0.3s ease;
+    transition: 0.3s ease;
 }
 
 #topBtn:hover {
-    background: #009acd !important;
-    transform: translateY(-5px) scale(1.08);
+    background: #009acd;
+    transform: translateY(-5px);
 }
