@@ -47,28 +47,21 @@ let letter = "";
 
 const topBtn = document.getElementById("topBtn");
 
-window.addEventListener("scroll", () => {
+window.addEventListener("scroll", function () {
 
-    if (window.scrollY > 300) {
-
-        topBtn.style.display = "block";
-
+    if (window.scrollY > 400) {
+        topBtn.style.display = "flex";
     } else {
-
         topBtn.style.display = "none";
-
     }
 
 });
 
-topBtn.addEventListener("click", () => {
+topBtn.addEventListener("click", function () {
 
     window.scrollTo({
-
         top: 0,
-
         behavior: "smooth"
-
     });
 
 });
