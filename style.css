@@ -971,3 +971,38 @@ topBtn.addEventListener("click", () => {
     });
 
 });
+
+/* ================= BACK TO TOP ================= */
+
+#topBtn {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+
+    width: 55px;
+    height: 55px;
+
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+    border: none;
+    border-radius: 50%;
+
+    background: #00BFFF;
+    color: #ffffff;
+
+    font-size: 22px;
+    cursor: pointer;
+
+    z-index: 9999;
+
+    box-shadow: 0 5px 15px rgba(0, 191, 255, 0.4);
+
+    transition: 0.3s ease;
+}
+
+#topBtn:hover {
+    background: #009acd;
+    transform: translateY(-5px);
+}
