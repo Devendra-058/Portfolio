@@ -944,6 +944,13 @@ let letter = "";
 
 /* ================= BACK TO TOP ================= */
 
+#topBtn:hover {
+    background: #009acd;
+    transform: translateY(-5px) scale(1.1);
+}
+
+/* ================= BACK TO TOP ================= */
+
 #topBtn {
     position: fixed;
     right: 30px;
@@ -952,20 +959,20 @@ let letter = "";
     width: 55px;
     height: 55px;
 
-    border: none;
-    border-radius: 50%;
-
-    background: #00BFFF;
-    color: white;
-
     display: none;
     align-items: center;
     justify-content: center;
 
+    border: none;
+    border-radius: 50%;
+
+    background: #00BFFF;
+    color: #ffffff;
+
     font-size: 22px;
     cursor: pointer;
 
-    z-index: 99999;
+    z-index: 9999;
 
     box-shadow: 0 5px 15px rgba(0, 191, 255, 0.4);
 
