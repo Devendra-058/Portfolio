@@ -897,72 +897,77 @@ footer p{
 
 }
 
-/* ================= BACK TO TOP ================= */
+const text = [
+    "AI & Python Developer",
+    "Machine Learning Enthusiast",
+    "Computer Vision Developer",
+    "OpenCV Developer",
+    "CustomTkinter Developer"
+];
 
-#topBtn{
+let count = 0;
+let index = 0;
+let currentText = "";
+let letter = "";
 
-    position: fixed;
+(function type(){
 
-    bottom: 30px;
+    if(count === text.length){
 
-    right: 30px;
+        count = 0;
 
-    width: 55px;
+    }
 
-    height: 55px;
+    currentText = text[count];
 
-    border: none;
+    letter = currentText.slice(0, ++index);
 
-    border-radius: 50%;
+    document.getElementById("typing").textContent = letter;
 
-    background: #00BFFF;
+    if(letter.length === currentText.length){
 
-    color: white;
+        count++;
 
-    font-size: 24px;
+        index = 0;
 
-    font-weight: bold;
+        setTimeout(type,1500);
 
-    cursor: pointer;
+    }
 
-    display: none;
+    else{
 
-    z-index: 999;
+        setTimeout(type,90);
 
-    box-shadow: 0 5px 15px rgba(0,191,255,0.4);
+    }
 
-    transition: all .3s ease;
+})();
 
-}
+// ================= BACK TO TOP =================
 
-#topBtn:hover{
+const topBtn = document.getElementById("topBtn");
 
-    background: #009acd;
+window.addEventListener("scroll", () => {
 
-    transform: translateY(-5px) scale(1.1);
+    if (window.scrollY > 300) {
 
-}
+        topBtn.style.display = "block";
 
-.social-link{
+    } else {
 
-    display:inline-block;
+        topBtn.style.display = "none";
 
-    margin-top:10px;
+    }
 
-    color:#00BFFF;
+});
 
-    text-decoration:none;
+topBtn.addEventListener("click", () => {
 
-    font-weight:600;
+    window.scrollTo({
 
-    transition:.3s;
+        top: 0,
 
-}
+        behavior: "smooth"
 
-.social-link:hover{
+    });
 
-    color:#38BDF8;
-
-    transform:translateY(-3px);
-
-}
+});
