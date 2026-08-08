@@ -43,21 +43,25 @@ let letter = "";
 
 })();
 
-// ================= BACK TO TOP =================
+/* ================= BACK TO TOP ================= */
 
 const topBtn = document.getElementById("topBtn");
 
-window.addEventListener("scroll", () => {
-    if (window.scrollY > 400) {
+window.addEventListener("scroll", function () {
+
+    if (window.scrollY > 300) {
         topBtn.style.display = "flex";
     } else {
         topBtn.style.display = "none";
     }
+
 });
 
-topBtn.addEventListener("click", () => {
+topBtn.addEventListener("click", function () {
+
     window.scrollTo({
         top: 0,
         behavior: "smooth"
     });
+
 });
