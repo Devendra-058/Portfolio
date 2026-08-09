@@ -983,3 +983,15 @@ let letter = "";
     background: #009acd;
     transform: translateY(-5px);
 }
+.social-link {
+    display: inline-block;
+    margin-top: 10px;
+    color: #00BFFF;
+    text-decoration: none !important;
+    font-weight: 600;
+}
+
+.social-link:hover {
+    color: #38BDF8;
+    text-decoration: none !important;
+}
